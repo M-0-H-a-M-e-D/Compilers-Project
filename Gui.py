@@ -332,6 +332,8 @@ def matplotCanvas():
             ('3', '4'): 'Operator',
             ('4', '5'): 'Operator \nletter,"(",")"',
             ('4', '6'): 'Operator \nNum',
+            ('5', '5'): 'letter\nNum\n\n\n\n',
+            ('6', '6'): 'Num\n\n\n',
             ('1', 'error'): 'others',
             ('3', 'error'): 'letter',
             ('6', 'error'): 'letter',
@@ -340,7 +342,6 @@ def matplotCanvas():
             ('4', 'error'): 'others', },
         font_color='black',
     )
-    #a.plot([1,2,3,4,5,6,7,8],[5,6,1,3,8,9,3,5])
     canvas = FigureCanvasTkAgg(f)
     canvas.draw()
     canvas.get_tk_widget().pack(side=BOTTOM, fill = BOTH, expand = True)
